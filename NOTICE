@@ -1,0 +1,9 @@
+EazyReader 1.0.72 for Linux
+Copyright 2026 Dataholm LLC DBA EazyReader. All rights reserved.
+
+EazyReader Basic is free to use. It is not open source.
+Terms: https://eazyreader.ai/terms
+Privacy: https://eazyreader.ai/privacy
+
+EazyReader includes open source components (Tauri, WebKitGTK bindings,
+pdf.js, Fontsource fonts and others) under their own licenses.

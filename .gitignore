@@ -1,0 +1,9 @@
+# This repo is releases-only. Do not commit binaries or source.
+*.AppImage
+*.deb
+*.tar.gz
+*.rpm
+*.pkg.tar.*
+SHA256SUMS
+/dist/
+/build/
