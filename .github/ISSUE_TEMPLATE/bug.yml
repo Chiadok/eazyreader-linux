@@ -1,0 +1,52 @@
+name: Bug
+description: Something does not work in the Linux build
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report. This repository is for the Linux build of EazyReader. Please do not paste personal document text.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you expect, and what actually happened?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: For example 1.0.72
+      placeholder: "1.0.72"
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: How you installed it
+      options:
+        - AppImage
+        - Tarball (install.sh)
+        - Debian package (.deb)
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: distro
+    attributes:
+      label: Distro and desktop
+      description: For example Omarchy (Arch + Hyprland), or Fedora + GNOME
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste terminal output if you have it. Do not include personal document text.

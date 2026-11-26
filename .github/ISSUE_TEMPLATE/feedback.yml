@@ -1,0 +1,43 @@
+name: Feedback
+description: Ideas, questions, or what worked well on Omarchy, Arch, or Hyprland
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: Feedback on the Linux community preview is welcome. Please do not paste personal document text.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of feedback
+      options:
+        - It works well
+        - Suggestion
+        - Question
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: distro
+    attributes:
+      label: Distro and desktop
+      description: For example Omarchy (Arch + Hyprland)
+    validations:
+      required: true
+  - type: dropdown
+    id: package
+    attributes:
+      label: How you installed it
+      options:
+        - AppImage
+        - Tarball (install.sh)
+        - Debian package (.deb)
+        - I have not installed it yet
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Your feedback
+    validations:
+      required: true
